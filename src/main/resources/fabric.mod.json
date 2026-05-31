@@ -1,41 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "template-mod",
+	"id": "createliquidfuel",
 	"version": "${version}",
-	"name": "Template Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Create Fly: Liquid Fuel",
+	"description": "Pump liquid fuel into Create blaze burners.",
 	"authors": [
-		"Me!"
+		"Yassigame"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/YassiGame/CreateFly-LiquidFuel",
+		"sources": "https://github.com/YassiGame/CreateFly-LiquidFuel"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/template-mod/icon.png",
+	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.TemplateMod"
-		],
-		"client": [
-			"com.example.client.TemplateModClient"
-		],
-		"fabric-datagen": [
-			"com.example.client.TemplateModDataGenerator"
+			"me.yassigame.createliquidfuel.CreateLiquidFuel"
 		]
 	},
 	"mixins": [
-		"template-mod.mixins.json",
-		{
-			"config": "template-mod.client.mixins.json",
-			"environment": "client"
-		}
+		"createliquidfuel.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~26.1.2",
 		"java": ">=25",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"create": ">=6.0.9-2"
 	}
 }

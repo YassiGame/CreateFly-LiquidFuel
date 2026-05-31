@@ -30,7 +30,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+		"createliquidfuel" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
